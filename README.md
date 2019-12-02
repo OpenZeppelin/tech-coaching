@@ -256,14 +256,11 @@ I haven't told you everything you need to know. Try splitting it into smaller pi
 
 ```python
 import time
-import sys
 
 def progress(activity):
-  print('{}...'.format(activity), end='')
-  sys.stdout.flush()
+  print('{}...'.format(activity), end='', flush=True)
   time.sleep(3)
-  print('\rFinished {}'.format(activity.lower()))
-  sys.stdout.flush()
+  print('\rFinished {}'.format(activity.lower(), flush=True))
   time.sleep(0.5)
 
 progress("Ionizing crystals")
