@@ -130,7 +130,7 @@ You may notice that your interpreter is now filled with junk. If you've followed
 
 Before going any further, let's just take the last set of instructions and copy them to the middle column of the screen. This is the `main.py` file. It should look like:
 
-```
+```python
 secondsPerMinute = 60
 secondsPerHour = 60 * secondsPerMinute
 secondsPerDay = 24 * secondsPerHour
