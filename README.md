@@ -260,7 +260,7 @@ import time
 def progress(activity):
   print('{}...'.format(activity), end='', flush=True)
   time.sleep(3)
-  print('\rFinished {}'.format(activity.lower(), flush=True))
+  print('\rFinished {}'.format(activity.lower()), flush=True)
   time.sleep(0.5)
 
 progress("Ionizing crystals")
