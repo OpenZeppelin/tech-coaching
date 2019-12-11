@@ -268,3 +268,21 @@ progress("Entering mainframe")
 progress("Relaxing")
 progress("Deflecting asteroid")
 ```
+
+### Stdin (Standard Input)
+
+When we have to write a program that needs to do something with text, it can be useful to use `stdin`, also known as "standard input". `stdin` is a special file that we can read from within the Python program. What's special about it is how it allows us to send data to the program in the terminal. If we have a program `main.py` that reads from `stdin`, we can use it in two different and both very useful ways:
+
+```
+python main.py < input.txt
+echo "my input" | python main.py
+```
+
+In order to read from `stdin` from Python, we have to import the `sys` module. Modules are bundles of functionality that we can use for various things. Before using them, we have to import them. In this case, the `sys` module provides functionality for interacting with the system, and readin from the `stdin` file is one such interaction with the system.
+
+```python
+import sys
+input_lines = sys.stdin.readlines()
+```
+
+Using `sys.stdin.readlines()` we get a list of all of the lines sent to `stdin`. We can also use `sys.stdin.read()` to get a single string with the entire input.
