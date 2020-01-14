@@ -2,14 +2,20 @@
 <head>
     <title>UBA | FADU | DG | DGPC | Cátedra Ocampo | Christian Sesin, Adriana Luna, Marisol Bicego, Tiago Martí Porto, Daniel Higa, Sebastián Sánchez, Magalí Poliszuk, Melanie Devich, Alicia Zelada  | Agostina Blanco, Juan Ignacio Merelli, Leandro Viñales, Manon | Tema: | 2º cuatrimestre 2019</title>
     <meta charset="utf-8">
-    <link href="css/estilos.css"type="text/css"rel="stylesheet">
+    <link href="../css/estilos.css"type="text/css"rel="stylesheet">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contenedor gradient materia-5" >
-        <section class="intro">
-            <a href="ingresar.html"><img src="img/logo.png"></a>
+    <div class="contenedor gradient" >
+        <section class="formlogin">
+            <h1>Bienvenidx!</h1>
+            <h2>Ingresá con tus datos del SIU</h2>
+            <form action="home.html" method="post">
+            	<input type="number" name="dni" placeholder="DNI" class="input">
+            	<input type="password" name="password" placeholder="Contraseña" class="input">
+            	<input type="submit" value="Ingresar" class="btn-big">
+            </form>
         </section>
     </div>
 </body>
